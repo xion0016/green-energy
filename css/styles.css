@@ -1,0 +1,291 @@
+/*font-family: 'Ubuntu', sans-serif;
+font-family: 'Lora', serif;*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 0;
+    line-height: 0.618rem;
+    max-width: 100rem;
+}
+
+.wrapper {
+    max-width: 100rem;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 2.5rem;
+    margin-top: 2rem;
+}
+
+.fa-pagelines {
+    color: limegreen;
+}
+
+.nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    padding: 1rem;
+    background-color: green;
+    margin: 0.3rem;
+}
+
+.nav li:hover {
+    background-color: darkseagreen;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.mh-image {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.mh-image figcaption {
+    position: absolute;
+    bottom: 1rem;
+    right: 16px;
+    font-size: 17px;
+    color: white;
+    line-height: 1.5rem;
+}
+
+.mh-image img {
+    width: 100%;
+    height: auto;
+}
+
+.mh-image figure {
+    margin: 0;
+}
+
+main {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: yellowgreen
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+main ul {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+main figure {
+    margin: 1rem 0;
+}
+
+main img {
+    width: 80%;
+    margin: 5% 10%
+}
+
+main ul {
+    list-style: none;
+}
+
+main li {
+    margin: 0 1rem;
+    border-radius: 30%;
+    background: lightyellow;
+    height: 2rem;
+    width: 6rem;
+    color: green;
+    border: none;
+    float: left;
+}
+
+main span {
+    line-height: 1.8rem;
+    font-size: 1rem;
+}
+
+span img {
+    width: 50%;
+    height: auto;
+}
+
+main li:hover {
+    box-shadow: 0 8px 16px #e2e2e2;
+    cursor: pointer;
+}
+
+#active {
+    color: black;
+    text-shadow: 1px 1px 3px lightyellow;
+}
+
+main figcaption {
+    margin: 0 1rem;
+    text-align: left;
+    color: aliceblue;
+    line-height: 0.9rem;
+    font-size: 14px;
+}
+
+footer ul {
+    padding: 0;
+    margin: 0;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+footer li {
+    float: left;
+    list-style: none;
+    width: 10%;
+}
+
+footer li a {
+    text-decoration: none;
+    color: green;
+}
+
+.info {
+    text-align: center;
+    color: darkgrey;
+    font-size: 15px;
+    line-height: 0.1rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 35rem) and (max-width: 60rem) {
+    body {
+        font-size: 1rem;
+    }
+    .nav li {
+        margin-right: 3px;
+        width: calc(32.6% - 10px + 8px);
+        float: left;
+    }
+    .nav li:last-child {
+        margin-right: 0;
+    }
+    .mh-image figcaption {
+        position: absolute;
+        bottom: 1rem;
+        right: 16px;
+        font-size: 25px;
+        color: white;
+        line-height: 1.5rem;
+    }
+    main {
+        padding: 1rem;
+    }
+    main figure img {
+        margin: 0 1rem 1rem 0;
+        width: calc(50% - 2rem + 0.5rem);
+        float: left;
+    }
+    main figure figcaption {
+        float: right;
+        text-align: left;
+        width: calc(50% - 2rem + 0.5rem);
+        line-height: 1.6rem;
+    }
+    footer li {
+        width: 5%;
+    }
+}
+
+@media screen and (min-width: 60rem) {
+    body {
+        font-size: 1.618rem;
+        text-align: left;
+    }
+    .wrapper {
+        max-width: 100rem;
+        margin: 4rem;
+    }
+    .nav li {
+        margin-right: 3px;
+        width: calc(17% - 10px + 8px);
+        float: left;
+        font-size: 15px;
+    }
+    .nav li:first-child {
+        margin-left: 0;
+    }
+    h1 {
+        text-align: left;
+        font-size: 2rem;
+    }
+    h2 {
+        text-align: left;
+        font-size: 1.5rem;
+    }
+    .mh-image figcaption {
+        position: absolute;
+        bottom: 1rem;
+        left: 16px;
+    }
+    main ul {
+        width: 10%;
+        float: left;
+        display: inherit;
+    }
+    main li {
+        float: inherit;
+        margin-top: 1rem;
+    }
+    main figure {
+        width: 90%;
+        float: right;
+        margin-top: 0;
+    }
+    main figure img {
+        margin: 0 1rem 1rem 0;
+        margin-top: 1rem;
+        margin-left: 2.5rem;
+        width: calc(30% - 1rem + 0.5rem);
+        float: left;
+    }
+    main figure figcaption {
+        margin-top: 1rem;
+        float: right;
+        text-align: left;
+        width: calc(70% - 6rem + 0.5rem);
+        line-height: 1.6rem;
+    }
+    footer ul {
+        justify-content: left;
+        font-size: 15px;
+        float: left;
+    }
+    footer li {
+        margin-right: 1rem;
+    }
+    .info {
+        text-align: left;
+        float: left;
+        margin-top: 0.5rem;
+    }
+}
